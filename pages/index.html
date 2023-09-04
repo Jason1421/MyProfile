@@ -1,93 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bio</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Profile</title>
 </head>
-
 <body>
-    <img src="../images/Profilepicture.jpg" alt="this is my profile picture">
-   
-    <nav>
-        <img src="https://cdn.britannica.com/01/3101-004-506325BB/Flag-Norway.jpg" alt="">
-        <h1>Thomas Jason Birch</h1>
-        <a href="mailto:thomasjasonbirch@gmail.com">Email Me thomasjasonbirch@gmail.com</a>
-        <a href="https://github.com/Jason1421">My Github</a>
+    <h1>Thomas Jason Birch</h1>
 
-        <ul>
-            <h3>About me</h3>
-            <li><p>i tend to come up with over ambitious projects like making an AGI, Articial General Intelgence. tho right now im working on it and lookng for a comapany that would like to do a callab. i do belive it would become higly succesful.</p></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
-    <section>
-        <h3>What ive done whitch is cool</h3>
-        <ol>
-            <li class="lists" id="list01">
-                <h4>Minecraft computer</h4>
-                <p>I made a Minecraft Computer during my first year of IT & MP. it stands for information technology and media production. this year i learned HTML, CSS and a tiny bit of javascript and python. tho there was a week where we had a 2 week project where we could make anything programming related and i asked if i could make a minecraft computer and i did. i also published a video trying to explain it. i had a blast making this thing where i were hyper focused on making it. i spend 3 days making this. if you wish to watch the video then <a id="pc-link" href="https://youtu.be/xI3D7gV5_lU?si=pEcUnTkD5bLMYEC4">Click here</a></p>
-            </li>
-            <li class="lists" id="list02">
+    <p><a href="https://github.com/Jason1421"> My GitHub Profile</a></p>
+    
+    <img src="https://cdn.britannica.com/01/3101-004-506325BB/Flag-Norway.jpg" alt="Country Flag">
+    <p>Location: Norway</p>
+    
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Gaming</li>
+        <li>Programming</li>
+        <li>Swimming</li>
+    </ul>
 
-            </li>
-            <li class="lists" id="list03">
+    <h2>About Me</h2>
+    <p>Hello im Thomas or people uslay call me Jason, i am currently learning how to use javascript 
+    and C# tho i know alot more c#. these days im working on an Artificial General intelegence or AGI and im looking for a partership or collab
+    i am also working on other very cool projects like websites and other cool projects</p>
+    <table><tr><td><img id="slidingImage" src="../images/Profilepicture.jpg" alt="Profile Picture"></td><td>click on the picture</td></tr></table>
+    
 
-            </li>
-            <li class="lists" id="list04">
 
-            </li>
-            <li class="lists" id="list05">
+    <h2>Contact Form</h2>
+    <form action="submit_form_endpoint" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
 
-            </li>
-            <li class="lists" id="list06">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
 
-            </li>
-        </ol>
-    </section>
-    <section>
-        <table class="space">
-            <tr class="space" id="row">
-                <h3>My Knoledge about IT</h3>
-                <th class="space">1</th>
-                <th class="space">1</th>
-                <th class="space">1</th>
-                <th class="space">1</th>
-                <th class="space">1</th>
-                <th class="space">1</th>
-            </tr>
-            <tr class="space" id="row">
-                <td class="space">2</td>
-                <td class="space">2</td>
-                <td class="space">2</td>
-                <td class="space">2</td>
-                <td class="space">2</td>
-                <td class="space">2</td>
-            </tr>
-            <tr class="space" id="row">
-                <td class="space">3</td>
-                <td class="space">3</td>
-                <td class="space">3</td>
-                <td class="space">3</td>
-                <td class="space">3</td>
-                <td class="space">3</td>
-            </tr>
-            <tr class="space" id="row">
-                <td class="space">4</td>
-                <td class="space">4</td>
-                <td class="space">4</td>
-                <td class="space">4</td>
-                <td class="space">4</td>
-                <td class="space">4</td>
-            </tr>
-        </table>
-    </section>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>Reference: Myself</p>
+        <p>I made a Minecraft Computer during my first year of IT & MP. it stands for information technology and
+            media production. this year i learned HTML, CSS and a tiny bit of javascript and python. tho there
+            was a week where we had a 2 week project where we could make anything programming related and i
+            asked if i could make a minecraft computer and i did. i also published a video trying to explain it.
+            i had a blast making this thing where i were hyper focused on making it. i spend 3 days making this.
+            if you wish to watch the video then <a id="pc-link"
+                href="https://youtu.be/xI3D7gV5_lU?si=pEcUnTkD5bLMYEC4">Click here</a></p>
+    </footer>
+    <div class="video-section">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xI3D7gV5_lU?si=pEcUnTkD5bLMYEC4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <canvas id="canvas"></canvas>
+    <script src="../js/script.js"></script>
 </body>
-
 </html>

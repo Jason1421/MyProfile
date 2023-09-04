@@ -1,37 +1,127 @@
-body{
+body {
+    font-family: 'Arial', sans-serif;
     color: rgb(255, 255, 255);
     background-color: rgb(39, 39, 39);
+    margin: 0;
+    padding: 20px;
 }
-img{
-    width: 10%;
+
+h1, h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+a {
+    color: #64ffda;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #92ffa6;
+}
+
+img {
+    width: 200px;
     height: auto;
-    border-style: solid;
-    border-radius: 100px;
-    border-width: 20px;
-    border-color: gray;
+    border: 3px solid gray; /* Solid border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* A subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effects */
 }
-.space{
-    border-style: solid;
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Special styling for the profile image */
+img#profileImage {
+    border-color: white;
+    width: 250px;
+    border-radius: 50%; /* Make the profile image circular */
+    margin: 20px 0; /* Add some vertical space around the profile image */
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+form {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
     padding: 10px;
-    margin: 10px;
-    width: auto;
-}
-.lists{
-    width: 500px;
-    height: auto;
-    border-style: solid;
-    margin: 10px;
-    padding: 10px;
-}
-#pc-link{
+    border: none;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.1);
     color: white;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: background 0.3s ease;
 }
-#pc-link:hover{
-    color: blue;
+
+input:focus, textarea:focus {
+    background: rgba(255,255,255,0.2);
+    outline: none;
 }
-p{
-    transition: transform 2s ease-out;
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #64ffda;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-p:hover{
-    animation: paragraph infinite;
+
+button:hover {
+    background-color: #92ffa6;
+}
+
+#slidingImage {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: top 2s, left 2s;  /* Transition effect for both top and left properties */
+}
+
+canvas {
+    position: absolute;
+    z-index: -2; /* Given that this value was suggested earlier */
+    top: 0px;
+    left: 0;
+    pointer-events: none;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
 }
